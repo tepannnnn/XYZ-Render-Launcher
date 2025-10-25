@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+
+    <!-- Add application icon for the EXE -->
+    <ApplicationIcon>Resources\logo.ico</ApplicationIcon>
+    <Win32Icon>Resources\logo.ico</Win32Icon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- ensure icon is copied to output and embedded for runtime loading -->
+    <None Include="Resources\logo.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <EmbeddedResource Include="Resources\logo.ico" />
+  </ItemGroup>
+
+</Project>
