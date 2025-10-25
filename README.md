@@ -8,7 +8,7 @@ Launch Blender renders directly from a clean UI
 Choose CPU, CUDA, or OPTIX devices
 Set frame ranges, output folders, and render settings easily
 Telegram notifications for render completion
-Lightweight and simple — no bloat
+Lightweight and simple, no bloat
 
 🛠 Prerequisites
 
